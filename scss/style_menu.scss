@@ -1,0 +1,201 @@
+.menuMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(226, 226, 226);
+    position: relative;
+    .illustration_page {
+        img {
+            width: 100%;
+            height: 30vh;
+            object-fit: cover;
+        }
+    }
+
+    .menuHead {
+        border-radius: 2rem 2rem 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        background-color: rgb(226, 226, 226);
+        top: 20.5vh;
+        height: 10vh;
+        width: 100%;
+
+        h2 {
+            font-family: 'Shrikhand';
+            margin: auto 45px auto 20px;
+        }
+
+        i {
+            font-weight: 300;
+            margin: auto 2rem;
+        }
+
+        .fa-heart:hover {
+            font-weight: bold;
+            color: transparent;
+            background-clip: text;
+            background-image: linear-gradient(40deg, #ff79da, #9356dc);
+            ;
+        }
+    }
+
+    .menuParts {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0 20px;
+        gap: 40px;
+        padding-bottom: 5vh;
+        justify-content: center;
+
+
+        .menuDishes {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            height: 100%;
+            
+            .fontNormal {
+                font-weight: normal;
+            }
+    
+            .fontNormal::after {
+                content: '';
+                display: block;
+                position: relative;
+                width: 7vw;
+                border: 2px solid #99E2D0;
+                margin-top: 8px;
+            }
+            .presentation {
+                display: flex;
+                align-items: end;
+                background-color: white;
+                position: relative;
+                border-radius: 15px;
+                height: 60px;
+                width: 350px;
+                overflow: hidden;
+                opacity: 0;
+                animation: present 1.5s forwards;
+                animation-delay: 0;
+
+                &:nth-of-type(2) {
+                    animation-delay: 0.5s;
+                }
+
+                &:nth-of-type(3) {
+                    animation-delay: 1s;
+                }
+
+                &:nth-of-type(4) {
+                    animation-delay: 1.5s;
+                }
+
+                .menuDesc {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    padding: 5px 0 5px 5px;
+                    width: 80%;
+
+                    h4,
+                    p {
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+
+                    p {
+                        font-weight: normal;
+                    }
+                }
+
+                .price {
+                    display: flex;
+                    align-items: end;
+                    font-weight: bold;
+                    padding: 0 5px 5px 0;
+                    width: 20%;
+                }
+
+                .check {
+                    width: 60px;
+                    height: 100%;
+                    background-color: #99e2d0;
+                    justify-content: center;
+                    position: absolute;
+                    top: 0;
+                    right: -60px;
+                }
+
+                .fa-circle-check {
+                    display: inherit;
+                    align-items: center;
+                    animation: circleCheck 1s ease;
+                    color: white;
+                }
+
+                @keyframes circleCheck {
+                    0% {
+                        transform: rotate(-180deg);
+                    }
+
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+
+
+
+                @keyframes present {
+                    from {
+                        opacity: 0;
+                        transform: translateY(+20px);
+                    }
+
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            }
+
+            .presentation:hover>.check {
+                display: flex;
+            }
+
+            .presentation:hover>.menuDesc {
+                animation: check 1s forwards;
+            }
+
+            .presentation:hover>.check {
+                animation: dispCheck 1s forwards;
+            }
+
+            @keyframes check {
+                0% {
+                    width: 80%;
+                }
+
+                100% {
+                    width: calc(80% - 60px);
+                }
+            }
+
+            @keyframes dispCheck {
+                0% {
+                    right: -60px;
+                }
+
+                100% {
+                    right: 0;
+                }
+            }
+
+        }
+
+    }
+}

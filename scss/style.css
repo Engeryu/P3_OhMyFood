@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+html,
+body {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+#resume,
+#searchbar,
+#explore,
+#prepCom,
+footer,
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+body header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+body header .redirectHome {
+  display: inherit;
+  justify-content: inherit;
+  color: inherit;
+  align-items: center;
+  text-decoration: inherit;
+  box-shadow: 1px -2px 8px grey;
+  height: 7vh;
+  position: relative;
+}
+body header .redirectHome img {
+  width: 300px;
+  height: 100%;
+  align-items: center;
+}
+body header #search {
+  background-color: rgb(235, 235, 235);
+  height: 4vh;
+  gap: 10px;
+}
+body header #search i {
+  margin: auto 0;
+}
+body header #search #searchbar {
+  width: 45%;
+  font-size: 20px;
+  resize: none;
+  background-color: transparent;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  outline-color: black;
+}
+body header #search #searchbar::-moz-placeholder {
+  color: black;
+}
+body header #search #searchbar:-ms-input-placeholder {
+  color: black;
+}
+body header #search #searchbar::placeholder {
+  color: black;
+}
+body header #explore {
+  background-color: rgb(248, 248, 248);
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 4vh;
+}
+body header #explore h2 {
+  width: 65vw;
+}
+body header #explore > p {
+  width: 75vw;
+}
+body header #search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body .purpleButton {
+  width: 232px;
+  border-radius: 36vw;
+  border: none;
+  height: 5vh;
+  background: linear-gradient(175deg, #ff79da, #9356dc);
+  margin: 0 auto 5vh auto;
+}
+body .purpleButton span {
+  font-weight: bold;
+  color: white;
+}
+body #resume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 5vh auto;
+}
+body #resume h2 {
+  display: inherit;
+  align-self: baseline;
+  margin-left: 3vh;
+  justify-content: center;
+}
+body #resume .columnH2 {
+  display: inherit;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 15px;
+}
+body #resume .columnH2 button {
+  background-color: transparent;
+  border-radius: 15px;
+  display: flex;
+  width: 313px;
+  height: 6vh;
+  border: none;
+  box-shadow: 0px 2px 4px 3px rgb(240, 240, 240);
+  background-color: rgb(248, 248, 248);
+  gap: 10px;
+  align-items: center;
+}
+body #resume .columnH2 button .numberFonct {
+  background-color: #9356dc;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+}
+body #resume .columnH2 button .numberFonct .fontColor {
+  color: white;
+  font-size: 16px;
+  margin: auto;
+}
+body #resume .columnH2 button .fontAweFonct {
+  color: #9356dc;
+}
+body #resume .columnH2 button i::before {
+  font-size: 24px;
+}
+body #resume .columnH2 button .fontWeight {
+  margin: auto;
+  margin-left: 30px;
+  font-weight: bold;
+}
+body #cardsMain {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 7vh auto;
+  gap: 30px;
+  width: 90%;
+}
+body #cardsMain a {
+  text-decoration: none;
+  color: black;
+}
+body #cardsMain .card {
+  border-radius: 16px;
+  gap: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(240, 240, 240);
+  flex: 1 1 48%;
+}
+body #cardsMain .card img {
+  width: 100%;
+  height: 20vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+body #cardsMain .card .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5vh 2vw 1.5vh 2vw;
+  padding-left: 1vh;
+}
+body #cardsMain .card .container .content {
+  justify-content: flex-start;
+}
+body #cardsMain .card .container .content h5 {
+  font-weight: normal;
+}
+body #cardsMain .card .container i {
+  font-weight: normal;
+  padding-right: 2vh;
+}
+body #cardsMain .card .container .fa-heart:hover {
+  font-weight: bold;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(40deg, #ff79da, #9356dc);
+}
+body footer {
+  background-color: rgb(56, 55, 55);
+  color: white;
+  gap: 10px;
+  padding: 4vh;
+}
+body footer h2 {
+  font-family: "Shrikhand";
+}
+body footer ul {
+  gap: 5px;
+}
+body footer ul li {
+  font-weight: normal;
+  list-style-type: none;
+  display: flex;
+}
+body footer ul li:first-of-type {
+  gap: 10px;
+}
+body footer ul li:nth-of-type(2) {
+  gap: 5px;
+}/*# sourceMappingURL=style.css.map */
