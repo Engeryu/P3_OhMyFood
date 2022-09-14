@@ -9,6 +9,9 @@
         object-fit: cover;
         height: 300px;
     }
+    .fa-arrow-left{
+        font-size: 24px;
+    }
 }
 
 #menuMain {
@@ -94,7 +97,7 @@
 
             .presentation {
                 display: flex;
-                align-items: end;
+                align-items: flex-end;
                 background-color: white;
                 border-radius: 15px;
                 height: 60px;
@@ -125,7 +128,7 @@
                 .price {
                     display: flex;
                     justify-content: center;
-                    align-items: end;
+                    align-items: flex-end;
                     font-weight: bold;
                     padding: 0 5px 5px 0;
                     width: 20%;
