@@ -1,118 +1,124 @@
-.menuMain {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgb(226, 226, 226);
-  position: relative;
-}
-.menuMain .illustration_page img {
+#illustration_page {
+  position: absolute;
+  top: 63px;
   width: 100%;
-  height: 30vh;
+  z-index: -1;
+}
+#illustration_page img {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 300px;
 }
-.menuMain .menuHead {
-  border-radius: 2rem 2rem 0 0;
+
+#menuMain {
   display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background-color: rgb(244, 244, 244);
+  border-radius: 36px 36px 0 0;
+  gap: 40px;
+  margin-top: 250px;
+}
+#menuMain #headerMain {
+  display: inherit;
   flex-direction: row;
   justify-content: center;
-  position: absolute;
-  background-color: rgb(226, 226, 226);
-  top: 20.5vh;
-  height: 10vh;
-  width: 100%;
+  padding-top: 20px;
 }
-.menuMain .menuHead h2 {
+#menuMain #headerMain h2 {
   font-family: "Shrikhand";
-  margin: auto 45px auto 20px;
+  font-size: 28px;
+  font-weight: 400;
 }
-.menuMain .menuHead i {
+#menuMain #headerMain i {
   font-weight: 300;
   margin: auto 2rem;
 }
-.menuMain .menuHead .fa-heart:hover {
+#menuMain #headerMain .fa-heart:hover {
   font-weight: bold;
   color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
   background-image: linear-gradient(40deg, #ff79da, #9356dc);
 }
-.menuMain .menuParts {
-  display: flex;
+#menuMain #menuHead {
+  display: inherit;
   flex-flow: row wrap;
-  padding: 0 20px;
-  gap: 40px;
-  padding-bottom: 5vh;
   justify-content: center;
+  background-color: rgb(244, 244, 244);
+  border-radius: 36px 36px 0 0;
+  gap: 40px;
 }
-.menuMain .menuParts .menuDishes {
-  display: flex;
+@media screen and (min-width: 1130px) {
+  #menuMain #menuHead {
+    padding: 136.5px 0;
+  }
+  #menuMain .menuHead3 {
+    padding: 174px 0 !important;
+  }
+}
+#menuMain .menuParts {
+  display: inherit;
   flex-direction: column;
-  gap: 15px;
-  height: 100%;
+  margin: auto;
+  gap: 20px;
+  width: 350px;
 }
-.menuMain .menuParts .menuDishes .fontNormal {
+#menuMain .menuParts .fontNormal {
   font-weight: normal;
+  text-transform: uppercase;
 }
-.menuMain .menuParts .menuDishes .fontNormal::after {
+#menuMain .menuParts .fontNormal::after {
   content: "";
   display: block;
   position: relative;
-  width: 7vw;
+  width: 29px;
   border: 2px solid #99E2D0;
   margin-top: 8px;
 }
-.menuMain .menuParts .menuDishes .presentation {
+#menuMain .menuParts .menuDishes {
+  display: inherit;
+  gap: 15px;
+  margin: 0 auto;
+}
+#menuMain .menuParts .menuDishes .presentation {
   display: flex;
   align-items: end;
   background-color: white;
-  position: relative;
   border-radius: 15px;
   height: 60px;
   width: 350px;
   overflow: hidden;
   opacity: 0;
-  -webkit-animation: present 1.5s forwards;
-          animation: present 1.5s forwards;
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
+  padding: 0 0 0 9px;
 }
-.menuMain .menuParts .menuDishes .presentation:nth-of-type(2) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-.menuMain .menuParts .menuDishes .presentation:nth-of-type(3) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.menuMain .menuParts .menuDishes .presentation:nth-of-type(4) {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-.menuMain .menuParts .menuDishes .presentation .menuDesc {
+#menuMain .menuParts .menuDishes .presentation .menuDesc {
   display: flex;
   flex-direction: column;
   gap: 5px;
   padding: 5px 0 5px 5px;
   width: 80%;
 }
-.menuMain .menuParts .menuDishes .presentation .menuDesc h4,
-.menuMain .menuParts .menuDishes .presentation .menuDesc p {
+#menuMain .menuParts .menuDishes .presentation .menuDesc h4,
+#menuMain .menuParts .menuDishes .presentation .menuDesc p {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menuMain .menuParts .menuDishes .presentation .menuDesc p {
+#menuMain .menuParts .menuDishes .presentation .menuDesc p {
   font-weight: normal;
 }
-.menuMain .menuParts .menuDishes .presentation .price {
+#menuMain .menuParts .menuDishes .presentation .price {
   display: flex;
+  justify-content: center;
   align-items: end;
   font-weight: bold;
   padding: 0 5px 5px 0;
   width: 20%;
 }
-.menuMain .menuParts .menuDishes .presentation .check {
+#menuMain .menuParts .menuDishes .presentation .check {
+  display: inherit;
   width: 60px;
   height: 100%;
   background-color: #99e2d0;
@@ -121,89 +127,8 @@
   top: 0;
   right: -60px;
 }
-.menuMain .menuParts .menuDishes .presentation .fa-circle-check {
+#menuMain .menuParts .menuDishes .presentation .fa-circle-check {
   display: inherit;
   align-items: center;
-  -webkit-animation: circleCheck 1s ease;
-          animation: circleCheck 1s ease;
   color: white;
-}
-@-webkit-keyframes circleCheck {
-  0% {
-    transform: rotate(-180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes circleCheck {
-  0% {
-    transform: rotate(-180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes present {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes present {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.menuMain .menuParts .menuDishes .presentation:hover > .check {
-  display: flex;
-}
-.menuMain .menuParts .menuDishes .presentation:hover > .menuDesc {
-  -webkit-animation: check 1s forwards;
-          animation: check 1s forwards;
-}
-.menuMain .menuParts .menuDishes .presentation:hover > .check {
-  -webkit-animation: dispCheck 1s forwards;
-          animation: dispCheck 1s forwards;
-}
-@-webkit-keyframes check {
-  0% {
-    width: 80%;
-  }
-  100% {
-    width: calc(80% - 60px);
-  }
-}
-@keyframes check {
-  0% {
-    width: 80%;
-  }
-  100% {
-    width: calc(80% - 60px);
-  }
-}
-@-webkit-keyframes dispCheck {
-  0% {
-    right: -60px;
-  }
-  100% {
-    right: 0;
-  }
-}
-@keyframes dispCheck {
-  0% {
-    right: -60px;
-  }
-  100% {
-    right: 0;
-  }
 }/*# sourceMappingURL=style_menu.css.map */

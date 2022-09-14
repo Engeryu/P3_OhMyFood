@@ -130,7 +130,7 @@
     transform: translateY(0);
   }
 }
-.fa-circle-check {
+.presentation:hover > .check > .fa-circle-check {
   -webkit-animation: circleCheck 1s ease;
           animation: circleCheck 1s ease;
 }
@@ -195,4 +195,31 @@
   100% {
     right: 0;
   }
-}/*# sourceMappingURL=load.css.map */
+}
+.menuDesc:hover .defil {
+  -webkit-animation: Scroll 2s backwards;
+          animation: Scroll 2s backwards;
+  width: 400px;
+}
+
+@-webkit-keyframes Scroll {
+  0% {
+    transform: translateX(0%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  100% {
+    transform: translateX(-15%);
+  }
+}
+
+@keyframes Scroll {
+  0% {
+    transform: translateX(0%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  100% {
+    transform: translateX(-15%);
+  }
+}/*# sourceMappingURL=animation.css.map */
