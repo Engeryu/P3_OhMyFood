@@ -53,14 +53,6 @@
   border-radius: 36px 36px 0 0;
   gap: 40px;
 }
-@media screen and (min-width: 1130px) {
-  #menuMain #menuHead {
-    padding: 136.5px 0;
-  }
-  #menuMain .menuHead3 {
-    padding: 174px 0 !important;
-  }
-}
 #menuMain .menuParts {
   display: inherit;
   flex-direction: column;

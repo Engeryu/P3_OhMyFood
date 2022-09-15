@@ -224,22 +224,6 @@ body #cardsMain #coloGreyWidth .card .container .fa-heart:hover {
           background-clip: text;
   background-image: linear-gradient(40deg, #ff79da, #9356dc);
 }
-@media screen and (min-width: 768px) {
-  body #cardsMain #coloGreyWidth .card {
-    flex: 1 1 47%;
-  }
-  body #cardsMain #coloGreyWidth .card img {
-    height: 315px;
-  }
-}
-@media screen and (min-width: 1300px) {
-  body #cardsMain #coloGreyWidth .card {
-    flex: 1 1 23%;
-  }
-  body #cardsMain #coloGreyWidth .card img {
-    height: 315px;
-  }
-}
 body footer {
   background-color: rgb(56, 55, 55);
   color: white;
