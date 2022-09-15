@@ -1,1 +1,21 @@
-/*# sourceMappingURL=media.css.map */
+@media screen and (min-width: 768px) {
+  #cardsMain .cardFlow {
+    width: 100% !important;
+  }
+  #cardsMain .cardFlow .card {
+    flex-basis: 40% !important;
+  }
+}
+@media screen and (min-width: 998px) {
+  #cardsMain .cardFlow {
+    width: 100% !important;
+    gap: 30px !important;
+  }
+  #cardsMain .cardFlow .card {
+    flex-basis: 21% !important;
+    height: 250px;
+  }
+  #cardsMain .cardFlow .card figure img {
+    height: 250px !important;
+  }
+}/*# sourceMappingURL=media.css.map */

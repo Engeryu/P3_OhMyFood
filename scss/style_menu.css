@@ -35,15 +35,7 @@
   font-weight: 400;
 }
 #menuMain #headerMain i {
-  font-weight: 300;
   margin: auto 2rem;
-}
-#menuMain #headerMain .fa-heart:hover {
-  font-weight: bold;
-  color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
-  background-image: linear-gradient(40deg, #ff79da, #9356dc);
 }
 #menuMain #menuHead {
   display: inherit;
