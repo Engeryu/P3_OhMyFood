@@ -149,11 +149,12 @@ body {
       flex-flow: row wrap;
       justify-content: space-around;
       gap: 20px;
+      width: 100%;
 
       button {
         border-radius: 15px;
         display: flex;
-        width: 95%;
+        flex-basis: 90%;
         height: 64px;
         border: none;
         box-shadow: 0px 2px 4px 3px rgb(240 240 240);
@@ -251,8 +252,8 @@ body {
             }
 
             .newSpan {
-              background-color: rgb(64, 156, 64);
-              color: green;
+              background-color: #99e2d0;
+              color: #206655;
               position: absolute;
               top: 10px;
               right: 10px;
@@ -270,8 +271,8 @@ body {
 
         i {
           position: absolute;
-          bottom: 15px;
-          right: 15px;
+          bottom: 10px;
+          right: 10px;
         }
       }
     }
