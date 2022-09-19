@@ -14,7 +14,7 @@
 @media screen and (min-width: 1100px) {
   #cardsMain {
     padding-bottom: 119px !important;
-    gap: 119px !important;
+    gap: 97px !important;
   }
   #cardsMain .cardFlow {
     width: 100% !important;
@@ -22,7 +22,6 @@
   }
   #cardsMain .cardFlow .card {
     flex-basis: 21% !important;
-    height: 289px !important;
   }
   #cardsMain .cardFlow .card figure img {
     height: 250px !important;
@@ -32,5 +31,25 @@
   }
   .menuMain3 {
     gap: 214px !important;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1129px) {
+  #menuMain #menuHead {
+    margin: 0 auto;
+  }
+  #menuMain #menuHead .menuParts {
+    margin: 0 auto;
+    width: 500px !important;
+  }
+  #menuMain #menuHead .menuParts .menuDishes .presentation {
+    width: 380px !important;
+  }
+}
+@media screen and (min-width: 1415px) {
+  #menuMain #menuHead .menuParts {
+    width: 380px !important;
+  }
+  #menuMain #menuHead .menuParts .menuDishes .presentation {
+    width: 380px !important;
   }
 }/*# sourceMappingURL=media.css.map */

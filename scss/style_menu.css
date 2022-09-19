@@ -33,6 +33,8 @@
   font-family: "Shrikhand";
   font-size: 28px;
   font-weight: 400;
+  margin: 0 29px 0 0;
+  padding-left: 10px;
 }
 #menuMain #headerMain i {
   margin: auto 2rem;
@@ -40,7 +42,7 @@
 #menuMain #menuHead {
   display: inherit;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
   background-color: rgb(244, 244, 244);
   border-radius: 36px 36px 0 0;
   gap: 40px;
@@ -48,7 +50,7 @@
 #menuMain .menuParts {
   display: inherit;
   flex-direction: column;
-  margin: auto;
+  margin: 0 auto;
   gap: 20px;
   width: 350px;
 }
