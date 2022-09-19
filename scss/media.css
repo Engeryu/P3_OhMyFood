@@ -26,30 +26,24 @@
   #cardsMain .cardFlow .card figure img {
     height: 250px !important;
   }
-  #menuMain {
-    gap: 176.5px !important;
-  }
-  .menuMain3 {
-    gap: 214px !important;
-  }
 }
 @media screen and (min-width: 500px) and (max-width: 1129px) {
-  #menuMain #menuHead {
+  .menuMain #menuHead {
     margin: 0 auto;
   }
-  #menuMain #menuHead .menuParts {
+  .menuMain #menuHead .menuParts {
     margin: 0 auto;
     width: 500px !important;
   }
-  #menuMain #menuHead .menuParts .menuDishes .presentation {
+  .menuMain #menuHead .menuParts .menuDishes .presentation {
     width: 380px !important;
   }
 }
 @media screen and (min-width: 1415px) {
-  #menuMain .menuParts {
+  .menuMain .menuParts {
     width: 380px !important;
   }
-  #menuMain .menuParts .menuDishes .presentation {
+  .menuMain .menuParts .menuDishes .presentation {
     width: 380px !important;
   }
 }/*# sourceMappingURL=media.css.map */

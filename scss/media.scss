@@ -41,19 +41,10 @@
             }
         }
     }
-
-    #menuMain {
-        gap: 176.5px !important;
-    }
-
-    .menuMain3 {
-        gap: 214px !important;
-    }
-
 }
 
 @media screen AND(min-width:500px) AND(max-width:1129px) {
-    #menuMain {
+    .menuMain {
         #menuHead {
             margin: 0 auto;
 
@@ -72,7 +63,7 @@
 }
 
 @media screen AND(min-width:1415px) {
-    #menuMain {
+    .menuMain {
         .menuParts {
             width: 380px !important;
 
