@@ -26,6 +26,13 @@ html {
   justify-content: flex-start;
 }
 
+#logo {
+  width: 175px;
+  height: 50%;
+  align-items: center;
+  margin: auto;
+}
+
 #purpleButton {
   width: 232px;
   height: 50px;
@@ -65,12 +72,6 @@ body header #redirectHome {
   align-items: center;
   text-decoration: inherit;
   padding: 16px;
-}
-body header img {
-  width: 175px;
-  height: 50%;
-  align-items: center;
-  margin: auto;
 }
 body #resume {
   display: flex;

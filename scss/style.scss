@@ -33,6 +33,13 @@ html {
     justify-content: flex-start;
   }
 }
+#logo {
+  width: 175px;
+  height: 50%;
+  align-items: center;
+  margin: auto;
+
+}
 
 #purpleButton {
   width: 232px;
@@ -77,13 +84,6 @@ body {
       align-items: center;
       text-decoration: inherit;
       padding: 16px;
-    }
-    img {
-      width: 175px;
-      height: 50%;
-      align-items: center;
-      margin: auto;
-
     }
   }
 
