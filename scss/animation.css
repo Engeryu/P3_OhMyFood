@@ -93,8 +93,8 @@
 .presentation {
   -webkit-animation: present 1.5s forwards;
           animation: present 1.5s forwards;
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 .presentation:nth-of-type(2) {
   -webkit-animation-delay: 0.5s;
