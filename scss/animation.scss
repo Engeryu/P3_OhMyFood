@@ -145,22 +145,3 @@
         right: 0;
     }
 }
-
-.menuDesc:hover {
-    .defil {
-        animation: Scroll 2s backwards;
-        width: 400px;
-    }
-}
-
-@keyframes Scroll {
-    0% {
-        transform: translateX(0%);
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    100% {
-        transform: translateX(-15%);
-    }
-}

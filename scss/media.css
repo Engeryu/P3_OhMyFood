@@ -46,10 +46,10 @@
   }
 }
 @media screen and (min-width: 1415px) {
-  #menuMain #menuHead .menuParts {
+  #menuMain .menuParts {
     width: 380px !important;
   }
-  #menuMain #menuHead .menuParts .menuDishes .presentation {
+  #menuMain .menuParts .menuDishes .presentation {
     width: 380px !important;
   }
 }/*# sourceMappingURL=media.css.map */
